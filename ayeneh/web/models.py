@@ -11,6 +11,7 @@ class Quiz(models.Model):
 class Question(models.Model):
     Quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     Number = models.IntegerField(auto_created=True , blank=True)
+    Text = models.TextField(null=True, blank=True)
 
     class Meta:
         unique_together = (('Quiz', 'Number'),)
@@ -19,6 +20,7 @@ class Question(models.Model):
 
         self.Number = self.__class__.objects.filter(Quiz = self.Quiz).count() + 1
         super(Question, self).save(*args, **kwargs)
+
 
 
 class Answer(models.Model):
@@ -43,6 +45,5 @@ class Parameter(models.Model):
 
 class Assessment(models.Model):
     Answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
-    Parameter = models.ForeignKey(Parameter)
+    Parameter = models.ForeignKey(Parameter , on_delete=models.CASCADE)
     Value = models.IntegerField(default=0)
-    

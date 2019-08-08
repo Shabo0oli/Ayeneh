@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d85ce964-3644-4f0b-8c78-e673d1ed5733" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/ayeneh/settings.py" afterPath="$PROJECT_DIR$/ayeneh/ayeneh/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/models.py" afterPath="$PROJECT_DIR$/ayeneh/web/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/urls.py" afterPath="$PROJECT_DIR$/ayeneh/web/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/views.py" afterPath="$PROJECT_DIR$/ayeneh/web/views.py" />
-    </list>
+    <list default="true" id="d85ce964-3644-4f0b-8c78-e673d1ed5733" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

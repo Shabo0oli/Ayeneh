@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -47,3 +49,12 @@ class Assessment(models.Model):
     Answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
     Parameter = models.ForeignKey(Parameter , on_delete=models.CASCADE)
     Value = models.IntegerField(default=0)
+
+
+class Student(models.Model):
+    Username = models.OneToOneField(User, on_delete=models.CASCADE)
+    PhoneNumber = models.CharField(max_length=15, blank=True)
+    Name = models.CharField(max_length=40, blank=True)
+
+    def __str__(self):
+        return "{}".format(self.Name)

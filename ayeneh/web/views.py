@@ -105,3 +105,9 @@ def addkey(request):
         return JsonResponse(context, encoder=JSONEncoder)
     else:
         return render(request, 'addkey.html', context)
+
+
+
+def intro(request):
+    context = {}
+    return render(request, 'intro.html', context)

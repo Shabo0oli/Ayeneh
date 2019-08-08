@@ -6,6 +6,7 @@ urlpatterns = [
     # The home page
     url(r'addquiz/$' , views.addquiz , name='addquiz'),
     url(r'addkey/$', views.addkey, name='addkey'),
+    url(r'', views.intro, name='intro'),
 
 ]
 

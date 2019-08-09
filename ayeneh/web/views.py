@@ -13,6 +13,8 @@ from django.contrib.auth.decorators import *
 from json import JSONEncoder
 from django.contrib.admin.views.decorators import staff_member_required
 import json
+from django.shortcuts import redirect
+
 
 
 import random
@@ -111,3 +113,69 @@ def addkey(request):
 def intro(request):
     context = {}
     return render(request, 'intro.html', context)
+
+@csrf_exempt
+def apiregister(request) :
+    context = {}
+    msg = request.POST
+    context['status'] = 'failed'
+
+    if 'name' not in msg or 'phonenumber' not in msg or 'password' not in msg or 'name' not in msg :
+        context['message'] = 'مشخصات را به درستی وارد کنید'
+        return JsonResponse(context, encoder=JSONEncoder)
+
+    name = msg['name']
+    Password = msg['password']
+    Phonenumber = str(msg['phonenumber'])
+    email = msg['email']
+
+    if len(Phonenumber)!=10 or Phonenumber[0]!='9' or not Phonenumber.isdigit() :
+        print(Phonenumber)
+        context['message'] = 'شماره تلفن را به درستی وارد کنید.به صورت عدد انگلیسی با فرمت 9XXXXXXXX'
+        return JsonResponse(context, encoder=JSONEncoder)
+
+    if Student.objects.filter(PhoneNumber=Phonenumber).exists() or User.objects.filter(email=email).exists():
+        context['message'] = 'مشخصات وارد شده تکراری میباشد.کاربری با این مشخصات قبلا ثبت نام کرده است.'
+        return JsonResponse(context, encoder=JSONEncoder)
+
+
+    user = User.objects.create_user(username=Phonenumber, password=Password , email=email)
+    user.save()
+    info = Student(Username=user,  PhoneNumber=Phonenumber, Name=name)
+    info.save()
+
+    context['message'] = 'ثبت نام شما با موفقیت انجام شد.'
+    context['status'] = 'success'
+
+    userauth = authenticate(request, username=Phonenumber, password=Password)
+    login(request, userauth)
+
+    return JsonResponse(context, encoder=JSONEncoder)
+
+
+@csrf_exempt
+def logout_view(request):
+    logout(request)
+    return redirect('/')
+
+
+
+@csrf_exempt
+def apilogin(request):
+    context = {}
+    if 'phonenumber' in request.POST and 'password' in request.POST:
+        username = request.POST['phonenumber']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None :
+            login(request, user)
+            context['status'] = 'success'
+            context['message'] = 'ورود با موفقیت انجام شد'
+        else:
+            context['message'] ='نام کاربری یا پسورد وارد شده اشتباه میباشد'
+        return JsonResponse(context, encoder=JSONEncoder)
+
+    print(request.POST)
+    context['message'] = 'لطفا اطلاعات را به درستی وارد کنید'
+    return JsonResponse(context, encoder=JSONEncoder)
+

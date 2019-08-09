@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d85ce964-3644-4f0b-8c78-e673d1ed5733" name="Default" comment="" />
+    <list default="true" id="d85ce964-3644-4f0b-8c78-e673d1ed5733" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/admin.py" afterPath="$PROJECT_DIR$/ayeneh/web/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/templates/intro.html" afterPath="$PROJECT_DIR$/ayeneh/web/templates/intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/templates/template.html" afterPath="$PROJECT_DIR$/ayeneh/web/templates/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/urls.py" afterPath="$PROJECT_DIR$/ayeneh/web/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ayeneh/web/views.py" afterPath="$PROJECT_DIR$/ayeneh/web/views.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +22,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-481">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -27,8 +34,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="e#24#56#0" expanded="true" />
               </folding>
@@ -36,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/ayeneh/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="459">
               <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding />
             </state>
@@ -49,10 +56,22 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+            <state relative-caret-position="488">
+              <caret line="177" column="23" lean-forward="false" selection-start-line="177" selection-start-column="23" selection-end-line="177" selection-end-column="23" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ayeneh/web/static/js/js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,8 +80,8 @@
       <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/templates/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="379">
+              <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -71,8 +90,8 @@
       <file leaf-file-name="intro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/templates/intro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="101" column="64" lean-forward="false" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+            <state relative-caret-position="119">
+              <caret line="189" column="37" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -83,6 +102,8 @@
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#7203#7210#1" expanded="true" />
+                <element signature="e#9351#9358#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,21 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addquiz.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ayeneh/web/templates/addquiz.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ayeneh/web/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -138,6 +149,7 @@
         <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -145,6 +157,8 @@
     <findStrings>
       <find>10%</find>
       <find>min</find>
+      <find>signupModalLabel</find>
+      <find>jque</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,16 +170,17 @@
         <option value="$PROJECT_DIR$/ayeneh/ayeneh/urls.py" />
         <option value="$PROJECT_DIR$/ayeneh/web/addquiz.html" />
         <option value="$PROJECT_DIR$/ayeneh/web/templates/addquiz.html" />
-        <option value="$PROJECT_DIR$/ayeneh/web/admin.py" />
-        <option value="$PROJECT_DIR$/ayeneh/web/views.py" />
         <option value="$PROJECT_DIR$/ayeneh/web/templates/addkey.html" />
         <option value="$PROJECT_DIR$/ayeneh/web/static/style.css" />
         <option value="$PROJECT_DIR$/ayeneh/web/models.py" />
         <option value="$PROJECT_DIR$/ayeneh/web/static/css/style.css" />
-        <option value="$PROJECT_DIR$/ayeneh/web/templates/template.html" />
-        <option value="$PROJECT_DIR$/ayeneh/web/templates/intro.html" />
-        <option value="$PROJECT_DIR$/ayeneh/web/urls.py" />
         <option value="$PROJECT_DIR$/ayeneh/ayeneh/settings.py" />
+        <option value="$PROJECT_DIR$/ayeneh/web/admin.py" />
+        <option value="$PROJECT_DIR$/ayeneh/web/templates/template.html" />
+        <option value="$PROJECT_DIR$/ayeneh/web/urls.py" />
+        <option value="$PROJECT_DIR$/ayeneh/web/views.py" />
+        <option value="$PROJECT_DIR$/ayeneh/web/templates/intro.html" />
+        <option value="$PROJECT_DIR$/ayeneh/web/static/js/js.js" />
       </list>
     </option>
   </component>
@@ -194,8 +209,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,7 +299,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ayeneh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ayeneh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ayeneh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,9 +543,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28183118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -540,16 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ayeneh/ayeneh/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ayeneh/web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -592,6 +618,8 @@
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#7203#7210#1" expanded="true" />
+            <element signature="e#9351#9358#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,19 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayeneh/web/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,6 +940,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayeneh/web/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayeneh/ayeneh/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -943,9 +968,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ayeneh/web/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ayeneh/web/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-481">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -953,26 +988,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ayeneh/web/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/ayeneh/web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ayeneh/web/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="177" column="23" lean-forward="false" selection-start-line="177" selection-start-column="23" selection-end-line="177" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ayeneh/web/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="379">
+          <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ayeneh/web/templates/intro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="101" column="64" lean-forward="false" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+        <state relative-caret-position="119">
+          <caret line="189" column="37" lean-forward="false" selection-start-line="189" selection-start-column="26" selection-end-line="189" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -983,35 +1030,19 @@
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#7203#7210#1" expanded="true" />
+            <element signature="e#9351#9358#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ayeneh/web/views.py">
+    <entry file="file://$PROJECT_DIR$/ayeneh/web/static/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        <state relative-caret-position="519">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayeneh/web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ayeneh/ayeneh/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -9,5 +9,6 @@ admin.site.register(Question)
 admin.site.register(Answer)
 admin.site.register(Assessment)
 admin.site.register(Parameter)
+admin.site.register(Student)
 
 

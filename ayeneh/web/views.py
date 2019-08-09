@@ -110,9 +110,7 @@ def addkey(request):
 
 
 
-def intro(request):
-    context = {}
-    return render(request, 'intro.html', context)
+
 
 @csrf_exempt
 def apiregister(request) :
@@ -179,3 +177,17 @@ def apilogin(request):
     context['message'] = 'لطفا اطلاعات را به درستی وارد کنید'
     return JsonResponse(context, encoder=JSONEncoder)
 
+
+
+def intro(request):
+    context = {}
+    if request.user.is_authenticated():
+        student = Student.objects.get(user=request.user)
+        state = student.State
+        if state != 'result' :
+            return render(request, 'intro.html', context)
+
+
+
+    context = {}
+    return render(request, 'intro.html', context)

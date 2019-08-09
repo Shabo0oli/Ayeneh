@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 class Quiz(models.Model):
     Name = models.CharField(max_length=120)
     Description = models.TextField(null=True, blank=True)
+    Layout = models.CharField(max_length=120 , blank=True , null=True)
 
 
 
@@ -55,6 +56,9 @@ class Student(models.Model):
     Username = models.OneToOneField(User, on_delete=models.CASCADE)
     PhoneNumber = models.CharField(max_length=15, blank=True)
     Name = models.CharField(max_length=40, blank=True)
+    Credit = models.IntegerField(blank=True , default=0)
+    State = models.CharField(max_length=40, blank=True)
+
 
     def __str__(self):
         return "{}".format(self.Name)

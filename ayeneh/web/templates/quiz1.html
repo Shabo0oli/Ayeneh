@@ -1,0 +1,165 @@
+{% extends "template.html"%}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="display:inline-block;width:100%;overflow-y:auto;">
+                    <ul class="timeline timeline-horizontal" style="width: 100%">
+                        <li class="timeline-item disable">
+                            <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title" style="text-align: center;">معرفی</h4>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title text-muted active" style="text-align: center;">آزمون شخصیت</h4>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i></small></p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title text-muted" style="text-align: center;">آزمون رغبت</h4>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> </small></p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title text-muted" style="text-align: center;">آزمون استعداد</h4>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> </small></p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title text-muted" style="text-align: center;">دیدن نتایج</h4>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> </small></p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin: 2%;">
+            <div >
+                <div class="card-header">
+                    <h1>{{quiz.Name}}</h1>
+                </div>
+                <div class="card-body">
+
+
+                    <div class="alert alert-info" role="alert">
+                        {{quiz.Description|linebreaks}}</div>
+
+                    {% if quiz.Layout == 'quality' %}
+
+                            <div class="aler alert-success" style="position: sticky;width: 95%;">
+                                <div class="row" style="padding-right: 52%;" >
+                                    <div class="col-2"></div>
+                                    <div class="col-2" style="white-space:nowrap;" >موافق</div>
+                                    <div class="col-2" style="white-space:nowrap;">موافق</div>
+                                    <div class="col-2" style="white-space:nowrap;">ممتنع</div>
+                                    <div class="col-2" style="white-space:nowrap;">موافق</div>
+                                    <div class="col-2" style="white-space:nowrap;">مخالف</div>
+                                        </div>
+                                </div>
+
+
+                    <form method="post">
+
+
+
+
+
+                        {% for question in questions %}
+
+                        <div class="row" style="margin-top: 1%;">
+                            <div class="col-6">
+                                <h6><b>{{question.Text}}</b></h6>
+                            </div>
+                            <div class="col-1"></div>
+                            {% for answer in question.answers %}
+                            <div class="col-1">
+                                <input class="form-check-input" type="radio" value="{{answer.Number}}" name="{{question.Number}}" required="required" >
+                            </div>
+                            {% endfor %}
+
+                        </div>
+
+                        {% endfor %}
+
+
+
+                        {% else %}
+
+                        <form method="post">
+
+
+                        {% for question in questions %}
+
+                        <div class="form-group">
+                            <div><h6><b>{{question.Text}}</b></h6></div>
+                            {% for answer in question.answers %}
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="{{answer.Number}}"  value="{{answer.Number}}" name="{{question.Number}}" required="required">
+                                <label class="form-check-label" for="{{answer.Number}}">{{answer.Text}}</label>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+
+                        {% endfor %}
+
+                        {% endif %}
+
+
+                        <div>
+                            <button type="submit" style="margin-top: 2%;" class="btn btn-success btn-lg btn-block">بعدی</button>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+

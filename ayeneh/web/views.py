@@ -139,7 +139,7 @@ def apiregister(request) :
 
     user = User.objects.create_user(username=Phonenumber, password=Password , email=email)
     user.save()
-    info = Student(Username=user,  PhoneNumber=Phonenumber, Name=name)
+    info = Student(Username=user,  PhoneNumber=Phonenumber, Name=name )
     info.save()
 
     context['message'] = 'ثبت نام شما با موفقیت انجام شد.'
@@ -179,13 +179,45 @@ def apilogin(request):
 
 
 
+def result(request) :
+    context = {}
+    return render(request, 'result.html', context)
+
+
+@csrf_exempt
 def intro(request):
     context = {}
-    if request.user.is_authenticated():
-        student = Student.objects.get(user=request.user)
+    if request.user.is_authenticated :
+
+        if request.POST :
+            usr = Student.objects.get(Username=request.user)
+            quizNumber = int(usr.State)
+            quiz = Quiz.objects.get(Number=quizNumber)
+            for q in request.POST.keys() :
+                quest = Question.objects.get(Quiz=quiz, Number=q)
+                ans = int(request.POST[q])
+                answ = Answer.objects.get(Question=quest , Number = ans)
+                res = Result(Username=usr , Answer=answ )
+                res.save()
+            usr.State = str(int(usr.State) + 1 )
+            usr.save()
+        student = Student.objects.get(Username=request.user)
         state = student.State
+        if int(state) > Quiz.objects.all().count() :
+            return result(request)
         if state != 'result' :
-            return render(request, 'intro.html', context)
+            quiz = Quiz.objects.get(Number=int(state))
+            context['quiz'] = quiz
+            questions = Question.objects.filter(Quiz=quiz)
+            context['questions'] = []
+            for q in questions :
+                question = {}
+                question['Text'] =  str(q.Number) + " - " +  q.Text
+                question['Number'] = q.Number
+                question['answers'] = []
+                question['answers'] = list(Answer.objects.filter(Question = q))
+                context['questions'].append(question)
+            return render(request, 'quiz1.html', context)
 
 
 

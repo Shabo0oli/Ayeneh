@@ -9,6 +9,14 @@ class Quiz(models.Model):
     Description = models.TextField(null=True, blank=True)
     Layout = models.CharField(max_length=120 , blank=True , null=True)
 
+    Number = models.IntegerField(auto_created=True , blank=True , null=True , default=0)
+
+
+    def save(self, *args, **kwargs):
+        if not self.__class__.objects.filter(id=self.id).exists() :
+            self.Number = self.__class__.objects.all().count()  + 1
+        super(Quiz, self).save(*args, **kwargs)
+
 
 
 class Question(models.Model):
@@ -57,8 +65,14 @@ class Student(models.Model):
     PhoneNumber = models.CharField(max_length=15, blank=True)
     Name = models.CharField(max_length=40, blank=True)
     Credit = models.IntegerField(blank=True , default=0)
-    State = models.CharField(max_length=40, blank=True)
+    State = models.CharField(max_length=40, blank=True ,default="1")
 
 
     def __str__(self):
         return "{}".format(self.Name)
+
+
+class Result(models.Model):
+    Username = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
+
